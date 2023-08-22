@@ -20,7 +20,7 @@ timezone: America/Toronto
 
 title: Alex Oxorn # the main title
 
-tagline: Your Codebases Number 1 Doctor # it will display as the sub-title
+tagline: Your Codebase's Number 1 Doctor # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A simple website used to post my thoughts and projects
