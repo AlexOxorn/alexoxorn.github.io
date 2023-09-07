@@ -167,6 +167,8 @@ defaults:
 
 sass:
   style: compressed
+  verbose: true
+  sourcemap: never
 
 compress_html:
   clippings: all
