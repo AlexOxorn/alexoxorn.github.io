@@ -303,69 +303,60 @@ function returnToMenu() {
         }
 }
 </script>
-<html>
-<head>
-    <title>Pokemon Type Quiz</title>
-</head>
-<body>
 
-    <h1 id="title">POKEMON TYPE MATCHUP QUIZ</h1>
-    <h2 id="subSection"> Main Menu </h2>
-    
-    <!-- <div id="iconsTest"></div> -->
+<h1 id="title">POKEMON TYPE MATCHUP QUIZ</h1>
+<h2 id="subSection"> Main Menu </h2>
 
-    <div id="mainMenuContent">
-        <table class="mainMenu">
-                <thead>
-                        <tr>
-                                <th colspan="1"> Quiz Type </th>
-                                <th colspan="1"> <button onclick="startMonoQuiz()">MonoType Quiz</button> </th>
-                                <th colspan="1"> <button onclick="startDualQuiz()">DualType Quiz</button> </th>
-                        </tr>
-                </thead>
+<!-- <div id="iconsTest"></div> -->
+
+<div id="mainMenuContent">
+<table class="mainMenu">
+        <thead>
                 <tr>
-                        <td> Correctly Guessing Effectiveness </td> 
-                        <td> 2 points </td>
-                        <td> 2 points </td>
+                        <th colspan="1"> Quiz Type </th>
+                        <th colspan="1"> <button onclick="startMonoQuiz()">MonoType Quiz</button> </th>
+                        <th colspan="1"> <button onclick="startDualQuiz()">DualType Quiz</button> </th>
                 </tr>
-                <tr>
-                        <td> Guessing Not Very Effective<br>when answer is Immune </td> 
-                        <td> 1 point </td>
-                        <td> 1 point </td>
-                </tr>
-                <tr>
-                        <td> Everything Else </td> 
-                        <td> 0 point </td>
-                        <td> 0 point </td>
-                </tr>
-        </table>
-    </div>
+        </thead>
+        <tr>
+                <td> Correctly Guessing Effectiveness </td> 
+                <td> 2 points </td>
+                <td> 2 points </td>
+        </tr>
+        <tr>
+                <td> Guessing Not Very Effective<br>when answer is Immune </td> 
+                <td> 1 point </td>
+                <td> 1 point </td>
+        </tr>
+        <tr>
+                <td> Everything Else </td> 
+                <td> 0 point </td>
+                <td> 0 point </td>
+        </tr>
+</table>
+</div>
 
-    <div id="quizContent" class="quizKlass" hidden>
-        <button id="backToMain" onclick="returnToMenu()">Return To Main Menu</button>
-        <div id="currentScore"></div>
-        <table id="questionTable" class="gameBoard">
-                <tr id="questionTableHeader">
-                        <th>Attacking Type</th>
-                        <th></th>
-                        <th colspan="2">Defending Type</th>
-                </tr>
-        </table>
+<div id="quizContent" class="quizKlass" hidden>
+<button id="backToMain" onclick="returnToMenu()">Return To Main Menu</button>
+<div id="currentScore"></div>
+<table id="questionTable" class="gameBoard">
+        <tr id="questionTableHeader">
+                <th>Attacking Type</th>
+                <th></th>
+                <th colspan="2">Defending Type</th>
+        </tr>
+</table>
 
-        <button id="guess4" hidden onclick="makeGuess(4)">Extremely Effective (4x)</button>
-        <button id="guess2" hidden onclick="makeGuess(2)">Super Effective (2x)</button>
-        <button id="guess1" hidden onclick="makeGuess(1)">Neutral Damage (1x)</button>
-        <br>
-        <button id="guess0.5" hidden onclick="makeGuess(0.5)">Not Very Effective (0.5x)</button>
-        <button id="guess0.25" hidden onclick="makeGuess(0.25)">Mostly Ineffective (0.25x)</button>
-        <button id="guess0" hidden onclick="makeGuess(0)">No Damage (0x)</button>
-        <br>
-        <button id="nextQuestion" disabled onclick="getNewTypes()">Next Question</button>
-    </div>
-
-    <script src="./script.js"></script>
-
-</body>
+<button id="guess4" hidden onclick="makeGuess(4)">Extremely Effective (4x)</button>
+<button id="guess2" hidden onclick="makeGuess(2)">Super Effective (2x)</button>
+<button id="guess1" hidden onclick="makeGuess(1)">Neutral Damage (1x)</button>
+<br>
+<button id="guess0.5" hidden onclick="makeGuess(0.5)">Not Very Effective (0.5x)</button>
+<button id="guess0.25" hidden onclick="makeGuess(0.25)">Mostly Ineffective (0.25x)</button>
+<button id="guess0" hidden onclick="makeGuess(0)">No Damage (0x)</button>
+<br>
+<button id="nextQuestion" disabled onclick="getNewTypes()">Next Question</button>
+</div>
 <style>
 .mainMenu table, 
 .mainMenu th,
