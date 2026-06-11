@@ -158,7 +158,7 @@ function updateTypeIcons() {
         const arrowCell = document.createElement('td');
         iconRow.appendChild(arrowCell);
         arrowCell.innerText = "\u2192";
-        arrowCell.style="font-size: 64px;"
+        arrowCell.style="font-size: 64px;";
 
         const defCell1 = document.createElement('td');
         iconRow.appendChild(defCell1);
