@@ -571,7 +571,7 @@ Anyway, it loops over the final head map, then adds together only the counts ass
 ```cpp
 size_t DFA::count(const std::string& match) const {
     using maptype = std::unordered_map<const state*, size_t>;
-    maptype curr{{&states[0], 1zu}};
+    maptype curr{ { &states[0], 1zu } };
     for (char c : match) {
         next.reserve(states.size());
         for (auto& [key, value] : curr) {
