@@ -22,7 +22,7 @@ const SubMenu = Object.freeze([
         "Main Menu",
         "Mono-Type Quiz",
         "Dual Type Quiz",
-])
+]);
 
 const Type = Object.freeze({
   normal: 0,
@@ -51,30 +51,30 @@ var RESS = 0.5;
 var IMUN = 0;
 
 const TypeEff = Object.freeze([
-//       NORM  FIRE  WATER ELEC  GRASS ICE   FIGHT POIS  GRND  FLY   PSYCH BUG   ROCK  GHOST DRAG  DARK  STEEL FAIRY
-        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, RESS, IMUN, NEUT, NEUT, RESS, NEUT], // NORMAL
-        [NEUT, RESS, RESS, NEUT, SUPR, SUPR, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, RESS, NEUT, SUPR, NEUT], // FIRE
-        [NEUT, SUPR, RESS, NEUT, RESS, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, NEUT, NEUT], // WATER
-        [NEUT, NEUT, SUPR, RESS, RESS, NEUT, NEUT, NEUT, IMUN, SUPR, NEUT, NEUT, NEUT, NEUT, RESS, NEUT, NEUT, NEUT], // ELECT
-        [NEUT, RESS, SUPR, NEUT, RESS, NEUT, NEUT, RESS, SUPR, RESS, NEUT, RESS, SUPR, NEUT, RESS, NEUT, RESS, NEUT], // GRASS
-        [NEUT, RESS, RESS, NEUT, SUPR, RESS, NEUT, NEUT, SUPR, SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT], // ICE
-        [SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, RESS, RESS, RESS, SUPR, IMUN, NEUT, SUPR, SUPR, RESS], // FIGHT
-        [NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, RESS, RESS, NEUT, NEUT, NEUT, RESS, RESS, NEUT, NEUT, IMUN, SUPR], // POIS
-        [NEUT, SUPR, NEUT, SUPR, RESS, NEUT, NEUT, SUPR, NEUT, IMUN, NEUT, RESS, SUPR, NEUT, NEUT, NEUT, SUPR, NEUT], // GROUND
-        [NEUT, NEUT, NEUT, RESS, SUPR, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, NEUT, NEUT, RESS, NEUT], // FLY
-        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, SUPR, NEUT, NEUT, RESS, NEUT, NEUT, NEUT, NEUT, IMUN, RESS, NEUT], // PSYCH
-        [NEUT, RESS, NEUT, NEUT, SUPR, NEUT, RESS, RESS, NEUT, RESS, SUPR, NEUT, NEUT, RESS, NEUT, SUPR, RESS, RESS], // BUG
-        [NEUT, SUPR, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, RESS, SUPR, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, RESS, NEUT], // ROCK
-        [IMUN, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, NEUT], // GHOST
-        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, IMUN], // DRAGON
-        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, RESS, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, RESS], // DARK
-        [NEUT, RESS, RESS, RESS, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, NEUT, RESS, SUPR], // STEEL
-        [NEUT, RESS, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, SUPR, RESS, NEUT], // FAIRY
-])
+/*       NORM  FIRE  WATER ELEC  GRASS ICE   FIGHT POIS  GRND  FLY   PSYCH BUG   ROCK  GHOST DRAG  DARK  STEEL FAIRY */
+        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, RESS, IMUN, NEUT, NEUT, RESS, NEUT], /* NORMAL */
+        [NEUT, RESS, RESS, NEUT, SUPR, SUPR, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, RESS, NEUT, SUPR, NEUT], /* FIRE */
+        [NEUT, SUPR, RESS, NEUT, RESS, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, NEUT, NEUT], /* WATER */
+        [NEUT, NEUT, SUPR, RESS, RESS, NEUT, NEUT, NEUT, IMUN, SUPR, NEUT, NEUT, NEUT, NEUT, RESS, NEUT, NEUT, NEUT], /* ELECT */
+        [NEUT, RESS, SUPR, NEUT, RESS, NEUT, NEUT, RESS, SUPR, RESS, NEUT, RESS, SUPR, NEUT, RESS, NEUT, RESS, NEUT], /* GRASS */
+        [NEUT, RESS, RESS, NEUT, SUPR, RESS, NEUT, NEUT, SUPR, SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT], /* ICE */
+        [SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, RESS, RESS, RESS, SUPR, IMUN, NEUT, SUPR, SUPR, RESS], /* FIGHT */
+        [NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, RESS, RESS, NEUT, NEUT, NEUT, RESS, RESS, NEUT, NEUT, IMUN, SUPR], /* POIS */
+        [NEUT, SUPR, NEUT, SUPR, RESS, NEUT, NEUT, SUPR, NEUT, IMUN, NEUT, RESS, SUPR, NEUT, NEUT, NEUT, SUPR, NEUT], /* GROUND */
+        [NEUT, NEUT, NEUT, RESS, SUPR, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, NEUT, NEUT, RESS, NEUT], /* FLY */
+        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, SUPR, NEUT, NEUT, RESS, NEUT, NEUT, NEUT, NEUT, IMUN, RESS, NEUT], /* PSYCH */
+        [NEUT, RESS, NEUT, NEUT, SUPR, NEUT, RESS, RESS, NEUT, RESS, SUPR, NEUT, NEUT, RESS, NEUT, SUPR, RESS, RESS], /* BUG */
+        [NEUT, SUPR, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, RESS, SUPR, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, RESS, NEUT], /* ROCK */
+        [IMUN, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, NEUT], /* GHOST */
+        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, RESS, IMUN], /* DRAGON */
+        [NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, RESS, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, SUPR, NEUT, RESS, NEUT, RESS], /* DARK */
+        [NEUT, RESS, RESS, RESS, NEUT, SUPR, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, NEUT, NEUT, NEUT, RESS, SUPR], /* STEEL */
+        [NEUT, RESS, NEUT, NEUT, NEUT, NEUT, SUPR, RESS, NEUT, NEUT, NEUT, NEUT, NEUT, NEUT, SUPR, SUPR, RESS, NEUT], /* FAIRY */
+]);
 
 function getFileName(type) {
-        return `/assets/pkmnTypeIcons/${type}.svg`
-}
+        return `/assets/pkmnTypeIcons/${type}.svg`;
+};
 
 function addIcon(tp, div, width=100) {
         const img = document.createElement('img');
@@ -83,10 +83,10 @@ function addIcon(tp, div, width=100) {
         img.width = width;
 
         div.appendChild(img);
-}
+};
 
 function showTypeChart() {
-        // Selects the element with id "myHeading" and changes its text
+        /* Selects the element with id "myHeading" and changes its text */
         document.getElementById("myHeading").innerHTML = "JavaScript is Working!";
 
         const container = document.getElementById('iconsTest');
@@ -116,7 +116,7 @@ function showTypeChart() {
                         cell.innerHTML = `${TypeEff[t1][t2]}`;
                 }
         }
-}
+};
 
 var randomKey = function (obj) {
     var keys = Object.keys(obj);
@@ -126,38 +126,38 @@ var randomKey = function (obj) {
 function updateScore() {
         document.getElementById("currentScore").innerHTML = 
                 `score: ${score}/${maxScore}: ${Math.round(maxScore ? 100 * score/maxScore : 0)}%`;
-}
+};
 
 function updateTypeIcons() {
         const qT = document.getElementById("questionTable");
         qT.replaceChildren();
 
-        // Header Row
+        /* Header Row */
         const headerRow = document.createElement('tr');
         qT.appendChild(headerRow);
         
-        const atkHead = document.createElement('th')
+        const atkHead = document.createElement('th');
         headerRow.appendChild(atkHead);
-        atkHead.textContent = "Attacking Type"
+        atkHead.textContent = "Attacking Type";
 
         headerRow.appendChild(document.createElement('th'));
 
-        const defHead = document.createElement('th')
+        const defHead = document.createElement('th');
         defHead.colSpan = 2;
         headerRow.appendChild(defHead);
-        defHead.textContent = "Defending Type"
+        defHead.textContent = "Defending Type";
         
-        // Icon Row
+        /* Icon Row */
         const iconRow = document.createElement('tr');
         qT.appendChild(iconRow)
 
-        const atkCell1 = document.createElement('td')
+        const atkCell1 = document.createElement('td');
         iconRow.appendChild(atkCell1);
         addIcon(currentAttacker, atkCell1, 100);
         
-        const arrowCell = document.createElement('td')
+        const arrowCell = document.createElement('td');
         iconRow.appendChild(arrowCell);
-        arrowCell.innerText = "\u2192"
+        arrowCell.innerText = "\u2192";
         arrowCell.style="font-size: 64px;"
 
         const defCell1 = document.createElement('td');
@@ -171,16 +171,16 @@ function updateTypeIcons() {
                 addIcon(currentDefender[1], defCell2, 100);
         }
 
-        // Text Row
+        /* Text Row */
         const textRow = document.createElement('tr');
         textRow.style ="font-size: 24px;"
-        qT.appendChild(textRow)
+        qT.appendChild(textRow);
 
-        const atkCellTXT = document.createElement('td')
+        const atkCellTXT = document.createElement('td');
         textRow.appendChild(atkCellTXT);
-        atkCellTXT.textContent = `A ${currentAttacker} type attack`
+        atkCellTXT.textContent = `A ${currentAttacker} type attack`;
 
-        const arrCellTXT = document.createElement('td')
+        const arrCellTXT = document.createElement('td');
         textRow.appendChild(arrCellTXT);
         arrCellTXT.textContent = `targets a`;
 
@@ -189,17 +189,17 @@ function updateTypeIcons() {
         defCellTXT.colSpan = 2;
 
         if (gameState === SINGLE) {
-                defCellTXT.textContent = `${currentDefender[0]} type pokemon`
+                defCellTXT.textContent = `${currentDefender[0]} type pokemon`;
         } else {
-                defCellTXT.textContent = `${currentDefender[0]}/${currentDefender[1]} type pokemon`
+                defCellTXT.textContent = `${currentDefender[0]}/${currentDefender[1]} type pokemon`;
         }
-}
+};
 
 function getNewTypes() {
         for (let btn of getAnswerButtons()) {
                 btn.hidden = false;
                 btn.disabled = false;
-                btn.classList.remove(...btn.classList)
+                btn.classList.remove(...btn.classList);
                 while (btn.childElementCount)  {
                         btn.removeChild(btn.lastElementChild);
                 }
@@ -215,7 +215,7 @@ function getNewTypes() {
                 currentDefender[1] = type2;
         }
         updateTypeIcons();
-}
+};
 
 function startQuiz() {
         score = 0;
@@ -225,30 +225,30 @@ function startQuiz() {
         document.getElementById("quizContent").hidden = false;
         updateScore();
         getNewTypes();
-}
+};
 
 function startMonoQuiz() {
         gameState = SINGLE;
         startQuiz();
         document.getElementById("subSection").innerHTML = SubMenu[1];
-}
+};
 
 function startDualQuiz() {
         gameState = DOUBLE;
         startQuiz();
         document.getElementById("subSection").innerHTML = SubMenu[2];
-}
+};
 
 function scoreSingle(answer, correct) {
         if (answer === correct) {
-                return [2, 2]
+                return [2, 2];
         }
 
         if (correct === 0 && answer === 0.5) {
-                return [1, 2]
+                return [1, 2];
         }
         return [0, 2];
-}
+};
 
 function scoreDouble(answer, correct) {
         if (answer === correct) {
@@ -259,7 +259,7 @@ function scoreDouble(answer, correct) {
                 return [1, 2]
         }
         return [0, 2];
-}
+};
 
 function makeGuess(arg) {
         for (let btn of getAnswerButtons()) {
@@ -285,14 +285,14 @@ function makeGuess(arg) {
         score += points;
         maxScore += maxPoints;
         updateScore();
-}
+};
 
 function* getAnswerButtons() {
         let range = gameState == SINGLE ? [2, 1, 0.5, 0] : [4, 2, 1, 0.5, 0.25, 0];
         for (let i of range) {
                 yield document.getElementById(`guess${i}`);
         }
-}
+};
 
 function returnToMenu() {
         document.getElementById("mainMenuContent").hidden = false;
@@ -301,7 +301,7 @@ function returnToMenu() {
         for (let i of [4, 2, 1, 0.5, 0.25, 0]) {
                 document.getElementById(`guess${i}`).hidden = true;
         }
-}
+};
 </script>
 
 <h1 id="title">POKEMON TYPE MATCHUP QUIZ</h1>

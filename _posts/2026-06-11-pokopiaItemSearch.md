@@ -6,33 +6,25 @@ tags: [tools,pokemon]
 ---
 
 <script>
-const objectsByType = {}
-const typeByObject = {}
+const objectsByType = {};
+const typeByObject = {};
 
 function addToObject(ob, key, val) {
     if (!Object.hasOwn(ob, key))
-        ob[key] = []
-    ob[key].push(val)
-}
+        ob[key] = [];
+    ob[key].push(val);
+};
 
 function parseLines(results) {
     for (let [type, ...objects] of results.data) {
         for (let d of objects) {
             if (d) {
-                addToObject(objectsByType, type, d)
-                addToObject(typeByObject, d, type)
+                addToObject(objectsByType, type, d);
+                addToObject(typeByObject, d, type);
             }
         }
     }
-    
-    // lines = []
-    // for (let k of Object.keys(objectsByType)) {
-    //         lines.push([k, `    <label><input type="checkbox" name="favs" value="${k}"> ${k}</label><br>`])
-    // }
-    // lines.sort(([a, a2], [b, b2]) => a < b);
-    // lines = lines.map(([a, b]) => b)
-    // console.log(lines.join('\n'))
-}
+};
 
 async function readBundledFile(file) {
     try {
@@ -43,7 +35,7 @@ async function readBundledFile(file) {
         console.error("Failed to read the file:", error);
         return "";
     }
-}
+};
 
 window.onload = function() {
     readBundledFile('/assets/PokopiaFavourites.csv')
@@ -57,37 +49,37 @@ window.onload = function() {
             })
     )
     
-}
+};
 
 function getResults() {
     const checkedBoxes = document.querySelectorAll('input[name="favs"]:checked');
     const stringArray = Array.from(checkedBoxes).map(checkbox => checkbox.value);
 
-    const results = {}
+    const results = {};
 
     for (let type of stringArray) {
         for (let object of objectsByType[type]) {
-            addToObject(results, object, type)
+            addToObject(results, object, type);
         }
     }
 
-    const sortedResults = Array.from(Object.entries(results)).sort(([k1, v1], [k2, v2]) => v2.length - v1.length)
+    const sortedResults = Array.from(Object.entries(results)).sort(([k1, v1], [k2, v2]) => v2.length - v1.length);
     const firstElements = sortedResults.slice(0, 44);
     
     function toLine([name, types]) {
-        return `${name}:\t[${types.join(', ')}]`
+        return `${name}:\t[${types.join(', ')}]`;
     }
 
     const ordered = document.createElement('ol');
     for (let x of firstElements) {
-        const item = document.createElement('li')
-        item.innerHTML = toLine(x)
+        const item = document.createElement('li');
+        item.innerHTML = toLine(x);
         ordered.appendChild(item);
     }
 
-    const resultsDiv = document.getElementById("results")
-    resultsDiv.replaceChildren(ordered)
-}
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.replaceChildren(ordered);
+};
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
