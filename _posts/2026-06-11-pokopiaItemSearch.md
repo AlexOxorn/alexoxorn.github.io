@@ -1,5 +1,5 @@
 ---
-title: "Pokemon Type Quiz"
+title: "Pokopia Favourites Finder"
 date: 2026-06-11 00:00:00 -400
 categories: [Tools]
 tags: [tools,pokemon]

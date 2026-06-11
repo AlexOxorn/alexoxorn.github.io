@@ -149,7 +149,7 @@ function updateTypeIcons() {
         
         /* Icon Row */
         const iconRow = document.createElement('tr');
-        qT.appendChild(iconRow)
+        qT.appendChild(iconRow);
 
         const atkCell1 = document.createElement('td');
         iconRow.appendChild(atkCell1);
