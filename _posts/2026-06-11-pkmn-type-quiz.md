@@ -173,7 +173,7 @@ function updateTypeIcons() {
 
         /* Text Row */
         const textRow = document.createElement('tr');
-        textRow.style ="font-size: 24px;"
+        textRow.style ="font-size: 24px;";
         qT.appendChild(textRow);
 
         const atkCellTXT = document.createElement('td');
