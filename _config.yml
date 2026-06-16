@@ -18,9 +18,9 @@ timezone: America/Toronto
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Alex Oxorn # the main title
+title: Emily Oxorn # the main title
 
-tagline: Your Codebase's Number 1 Doctor # it will display as the sub-title
+tagline: Gaming and Programming Nerd
 
 description: >- # used by seo meta and the atom feed
   A simple website used to post my thoughts and projects
@@ -37,13 +37,13 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Alex Oxorn
+  name: Emily Oxorn
   email: alex.oxorn@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/username # change to your github homepage
+    - https://github.com/AlexOxorn # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/AlexOxorn
+    # - https://www.facebook.com/AlexOxorn
     - https://www.linkedin.com/in/alexander-oxorn-a02175145
 
 google_site_verification: # fill in to your verification string

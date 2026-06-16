@@ -378,5 +378,3 @@ function returnToMenu() {
 .correct {color: #04AA6D;}
 .incorrect {color: #f44336;}
 </style>
-
-</html>
